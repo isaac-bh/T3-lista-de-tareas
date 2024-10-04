@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="text-center">Lista de tareas</h1>
+    <section id="lista-de-tareas">
+        <div id="contenedor-lista">
+            <p id="error-msg"></p>
+            <form id="formulario">
+                <input placeholder="Agregar tarea..." type="text" name="tarea" id="tarea">
+                <button id="agregar">+</button>
+            </form>
+            <ul id="lista">
+            </ul>
+            <p id="lista-vacia">No hay tareas pendientes</p>
+        </div>
+    </section>
+
+    <div class="creditos">
+        <p>Programación para Internet</p>
+        <p>Isaac Alain Benavides Hernandez</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

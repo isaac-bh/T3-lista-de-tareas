@@ -1,0 +1,130 @@
+:root {
+    background-color: #1d2021;
+    color: #ebdbb2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#lista-de-tareas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor-lista {
+    width: 100%;
+    grid-column: 2;
+}
+
+@media (max-width: 768px) {
+    #lista-de-tareas {
+        grid-template-columns: 1fr;
+    }
+
+    #contenedor-lista {
+        grid-column: 1;
+    }
+}
+
+
+#formulario {
+    display: flex;
+    gap: 10px;
+}
+
+#formulario input[type=text] {
+    width: 90%;
+    font-size: 1.5rem;
+    background-color: #282828;
+    padding: 8px;
+    border: 1px solid #bdae93;
+    color: #ebdbb2;
+}
+
+#agregar {
+    width: 10%;
+    background-color: #282828;
+    padding: 8px;
+    border: 1px solid #bdae93;
+    color: #ebdbb2;
+    font-size: 1.5rem;
+    height: 100%;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#agregar:hover {
+    background-color: #bdae93;
+    padding: 8px;
+    border: 1px solid #bdae93;
+    color: #282828;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+#lista {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem;
+
+}
+
+#lista li {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid #bdae93;
+    cursor: pointer;
+}
+
+#lista li p {
+    width: 90%;
+    margin: 0;
+    padding: 8px;
+}
+
+#lista li button {
+    width: 10%;
+    background-color: #282828;
+    padding: 8px;
+    border: 0;
+    border-left: 1px solid #bdae93;
+    color: #ebdbb2;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#lista li button:hover {
+    background-color: #bdae93;
+    color: #282828;
+}
+
+#lista-vacia {
+    text-align: center;
+}
+
+.creditos {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.creditos p {
+    padding: 0;
+    margin: 0;
+    color: rgba(189, 174, 147, 0.5);
+}
+
+#error-msg {
+    text-align: center;
+    color: #fb4934;
+}
