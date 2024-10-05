@@ -5,7 +5,7 @@
 Isaac Alain Benavides Hernandez
 216817953
 
-Enlace a la página: 
+Enlace a la página: https://isaac-bh.github.io/T3-lista-de-tareas/
 
 #### Instrucciones
 La lista de tareas esta desarrollada con JavaScript Vanilla, por lo que para ejecutar la app solo se tiene que abrir el archivo index.html en el navegador, o se puede abrir el enlace de arriba para probar el funcionamiento.
